@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.monia.grupomatch.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/hasloText"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/loginText"
+        android:layout_alignStart="@+id/loginText"
+        android:layout_below="@+id/loginText"
+        android:layout_marginBottom="305dp"
+        android:layout_marginTop="97dp"
+        android:ems="10"
+        android:hint="@string/hasloText"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/rejestr1Btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/loginText"
+        android:layout_width="213dp"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/loginText"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasloText" />
+
+    <Button
+        android:id="@+id/zalogujBtn"
+        android:layout_width="233dp"
+        android:layout_height="62dp"
+        android:layout_alignEnd="@+id/rejestr1Btn"
+        android:layout_alignRight="@+id/rejestr1Btn"
+        android:layout_below="@+id/hasloText"
+        android:layout_marginTop="8dp"
+        android:onClick="klik"
+        android:text="@string/zalogujBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText" />
+
+    <Button
+        android:id="@+id/rejestr1Btn"
+        android:layout_width="235dp"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:onClick="klik"
+        android:text="@string/rejestr1Btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasloText"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

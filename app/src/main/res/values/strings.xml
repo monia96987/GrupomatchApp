@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Grupomatch</string>
+
+    //main
+    <string name="rejestr1Btn">Zarejestruj się</string>
+    <string name="zapomnianeBtn">Zapomniałem hasła</string>
+    <string name="zalogujBtn">Zaloguj się</string>
+    <string name="hasloText">Hasło</string>
+    <string name="loginText">Login</string>
+
+
+    //rejestracja1
+    <string name="imieText">Imię</string>
+    <string name="nazwiskoText">Nazwisko</string>
+    <string name="wydzialText">Wydział</string>
+    <string name="kierunekText">Kierunek</string>
+    <string name="rokText">Rok</string>
+    <string name="semestrText">Semestr</string>
+    <string name="dalejBtn">Dalej</string>
+
+    //rejestracja2
+    <string name="emailText">Email</string>
+    <string name="phasloText">Powtórz hasło</string>
+    <string name="rejestr2Btn">Zarejestruj się</string>
+
+
+    //Menu
+    <string name="mojegrupyBtn">Moje grupy</string>
+    <string name="znajdzgrupeBtn">Znajdź grupę</string>
+    <string name="wiadomosciBtn">Wiadomości</string>
+
+
+
+
+    //Moje grupy
+    <string name="zmiennaprzedmiot">Zmiennaprzedmiot</string>
+    <string name="notatkiText">Notatki</string>
+    <string name="czlonkowieText">Członkowie</string>
+    <string name="zmiennaczlonek">Zmiennaczlonek</string>
+    <string name="zmiennanotatka">Zmiennanotatka</string>
+
+    //notatka
+    <string name="zapiszBtn">Zapisz</string>
+    <string name="usunnBtn">Usun</string>
+
+
+    //znajdz grupe
+    <string name="zmiennaprzedmiot2">Zmiennaprzedmiot</string>
+
+    //przedmiot
+    <string name="osobyBtn">Studenci</string>
+    <string name="tematyBtn">Tematy</string>
+
+    //osoby
+    <string name="zmiennaosoba">zmiennaosoba</string>
+
+    //tematy
+    <string name="zmiennatemat">zmiennatemat</string>
+
+
+
+
+    //wiadomosci
+    <string name="wiadomoscBtn">wiadomosc</string>
+
+    //wiadomosc
+    <string name="usunwBtn">Usuń</string>
+    <string name="wyslijBtn">Wyślij</string>
+
+
+
+
+    //tematmenu
+    <string name="dodajt">Dodaj do grupy</string>
+    <string name="wroct">Wróć</string>
+
+</resources>

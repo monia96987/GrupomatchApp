@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.monia.grupomatch.MojeGrupy1">
+
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="518dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="17dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/zmiennaprzedmiot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="klik4"
+                android:text="@string/zmiennaprzedmiot"
+                tools:layout_editor_absoluteX="23dp"
+                tools:layout_editor_absoluteY="39dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
