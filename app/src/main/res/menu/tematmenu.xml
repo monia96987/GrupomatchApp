@@ -3,13 +3,11 @@
 
     <item
         android:id="@+id/dodajt"
-        android:enabled="true"
-        android:title="@string/dodajt"
-        android:onClick="klik" />
+        android:title="@string/dodajt" />
     <item
         android:id="@+id/wroct"
-        android:enabled="true"
+
         android:title="@string/wroct"
-        android:onClick="klik"/>
+       />
 
 </menu>

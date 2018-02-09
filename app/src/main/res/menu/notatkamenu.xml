@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/takn"
-        android:title="Tak"/>
+        android:id="@+id/usunn"
+        android:title="Usuń"/>
     <item
-        android:id="@+id/nien"
+        android:id="@+id/wrocn"
         android:title="Wróć"/>
 </menu>

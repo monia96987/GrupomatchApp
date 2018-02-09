@@ -18,7 +18,7 @@ public class Tematy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tematy);
 
-        button = (Button) findViewById(R.id.zmiennatemat);
+        button = (Button) findViewById(R.id.zmiennatemat2);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +31,18 @@ public class Tematy extends AppCompatActivity {
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(Tematy.this, "" + item.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent intent;
+                        switch (item.getItemId())
+                        {
+                            case R.id.dodajt:
+                                intent = new Intent(Tematy.this, Menu.class);
+                                startActivity(intent);
+                                Toast.makeText(Tematy.this, "Temat został wybrany" , Toast.LENGTH_LONG).show();
+                                break;
+                            case R.id.wrocw:
+                                break;
+                        }
+
                         return true;
                     }
                 });
@@ -40,17 +51,5 @@ public class Tematy extends AppCompatActivity {
 
     }
 
-    public void klik(View view) {
-        Intent intent;
-        switch (view.getId())
-        {
-            case R.id.dodajt:
-                intent = new Intent(Tematy.this, Notatka.class);
-                startActivity(intent);
-                break;
 
-            case R.id.wroct:
-                intent = new Intent(Tematy.this, Menu.class);
-                startActivity(intent);
-                break;
-}}}
+}

@@ -27,7 +27,8 @@
         <activity android:name=".Przedmiot" />
         <activity android:name=".Osoby" />
         <activity android:name=".Tematy" />
-        <activity android:name=".Notatka"></activity>
+        <activity android:name=".Notatka" />
+        <activity android:name=".DaneStudenta" />
     </application>
 
 </manifest>

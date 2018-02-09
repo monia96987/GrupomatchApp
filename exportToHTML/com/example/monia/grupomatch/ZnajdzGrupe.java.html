@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>ZnajdzGrupe.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+ZnajdzGrupe.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">com.example.monia.grupomatch; 
+ 
+</span><span class="s0">import </span><span class="s1">android.content.Intent; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.app.AppCompatActivity; 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+</span><span class="s0">import </span><span class="s1">android.view.View; 
+ 
+</span><span class="s0">public class </span><span class="s1">ZnajdzGrupe </span><span class="s0">extends </span><span class="s1">AppCompatActivity { 
+ 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_znajdz_grupe); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">klik(View view) { 
+        Intent intent; 
+        </span><span class="s0">switch </span><span class="s1">(view.getId()) { 
+           </span><span class="s0">case </span><span class="s1">R.id.zmiennaprzedmiot2: 
+                intent = </span><span class="s0">new </span><span class="s1">Intent(ZnajdzGrupe.</span><span class="s0">this</span><span class="s1">, Przedmiot.</span><span class="s0">class</span><span class="s1">); 
+                startActivity(intent); 
+                </span><span class="s0">break</span><span class="s1">; 
+ 
+ 
+ 
+        } 
+}} 
+</span></pre>
+</body>
+</html>

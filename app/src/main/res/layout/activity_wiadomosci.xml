@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/rozmazane"
     android:layout_height="match_parent"
     tools:context="com.example.monia.grupomatch.Wiadomosci">
 
@@ -27,9 +28,10 @@
             <Button
                 android:id="@+id/wiadomoscBtn"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="66dp"
                 android:onClick="klik"
                 android:text="@string/wiadomoscBtn"
+                android:background="@drawable/but"
                 tools:layout_editor_absoluteX="103dp"
                 tools:layout_editor_absoluteY="132dp" />
         </LinearLayout>

@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class Wiadomosc extends AppCompatActivity {
     Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,21 +30,40 @@ public class Wiadomosc extends AppCompatActivity {
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(Wiadomosc.this, "" + item.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent intent;
+                        switch (item.getItemId())
+                        {
+                            case R.id.usunw:
+                                intent = new Intent(Wiadomosc.this, Wiadomosci.class);
+                                startActivity(intent);
+                                Toast.makeText(Wiadomosc.this, "Wiadomosc została usunięta" , Toast.LENGTH_LONG).show();
+                                break;
+                            case R.id.wrocw:
+                                break;
+                        }
+
                         return true;
                     }
                 });
                 popupMenu.show();
-            }});}
+            }});
+
+    }
 
     public void klik(View view) {
         Intent intent;
         switch (view.getId())
         {
-            case R.id.wyslijBtn:
+            case R.id.usunwBtn:
                 intent = new Intent(Wiadomosc.this, Wiadomosci.class);
                 startActivity(intent);
 
+                break;
+
+            case R.id.wyslijBtn:
+                intent = new Intent(Wiadomosc.this, Wiadomosci.class);
+                startActivity(intent);
+                Toast.makeText(Wiadomosc.this, "Wiadomość została wysłana" , Toast.LENGTH_LONG).show();
                 break;
     }
 }}

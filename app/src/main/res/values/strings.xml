@@ -10,16 +10,16 @@
 
 
     //rejestracja1
-    <string name="imieText">Imię</string>
-    <string name="nazwiskoText">Nazwisko</string>
-    <string name="wydzialText">Wydział</string>
-    <string name="kierunekText">Kierunek</string>
-    <string name="rokText">Rok</string>
-    <string name="semestrText">Semestr</string>
+    <string name="imieText">Imię:</string>
+    <string name="nazwiskoText">Nazwisko:</string>
+    <string name="wydzialText">Wydział:</string>
+    <string name="kierunekText">Kierunek:</string>
+    <string name="rokText">Rok:</string>
+    <string name="semestrText">Semestr:</string>
     <string name="dalejBtn">Dalej</string>
 
     //rejestracja2
-    <string name="emailText">Email</string>
+    <string name="emailText">Email:</string>
     <string name="phasloText">Powtórz hasło</string>
     <string name="rejestr2Btn">Zarejestruj się</string>
 
@@ -30,18 +30,17 @@
     <string name="wiadomosciBtn">Wiadomości</string>
 
 
-
-
     //Moje grupy
     <string name="zmiennaprzedmiot">Zmiennaprzedmiot</string>
     <string name="notatkiText">Notatki</string>
     <string name="czlonkowieText">Członkowie</string>
     <string name="zmiennaczlonek">Zmiennaczlonek</string>
     <string name="zmiennanotatka">Zmiennanotatka</string>
+    <string name="opuscBtn">Opuść grupę</string>
 
     //notatka
     <string name="zapiszBtn">Zapisz</string>
-    <string name="usunnBtn">Usun</string>
+    <string name="usunnBtn">Usuń</string>
 
 
     //znajdz grupe
@@ -52,26 +51,22 @@
     <string name="tematyBtn">Tematy</string>
 
     //osoby
-    <string name="zmiennaosoba">zmiennaosoba</string>
+    <string name="zmiennaosoba">Zmiennaosoba</string>
 
     //tematy
-    <string name="zmiennatemat">zmiennatemat</string>
-
-
+    <string name="zmiennatemat">Zmiennatemat</string>
 
 
     //wiadomosci
-    <string name="wiadomoscBtn">wiadomosc</string>
+    <string name="wiadomoscBtn">Wiadomość</string>
 
     //wiadomosc
     <string name="usunwBtn">Usuń</string>
     <string name="wyslijBtn">Wyślij</string>
 
 
-
-
     //tematmenu
-    <string name="dodajt">Dodaj do grupy</string>
+    <string name="dodajt">Wybierz temat</string>
     <string name="wroct">Wróć</string>
 
 </resources>

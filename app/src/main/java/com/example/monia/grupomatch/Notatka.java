@@ -29,8 +29,19 @@ Button button;
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(Notatka.this, "" + item.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent intent;
+                        switch (item.getItemId())
+                        {
+                            case R.id.usunn:
+                                intent = new Intent(Notatka.this, MojeGrupy2.class);
+                                startActivity(intent);
+                                Toast.makeText(Notatka.this, "Notatka została usunięta" , Toast.LENGTH_LONG).show();
+                                break;
+                            case R.id.wrocn:
+                                break;
+                        }
                         return true;
+
                     }
                 });
                 popupMenu.show();
@@ -44,6 +55,7 @@ Button button;
             case R.id.zapiszBtn:
                 intent = new Intent(Notatka.this, MojeGrupy2.class);
                 startActivity(intent);
+                Toast.makeText(Notatka.this, "Notatka została zapisana" , Toast.LENGTH_LONG).show();
 
                 break;
 

@@ -4,30 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.monia.grupomatch.Tematy">
+    android:background="@drawable/rozmazane"
+    tools:context="com.example.monia.grupomatch.Tematy"
+    tools:layout_editor_absoluteY="81dp">
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/zmiennaprzedmiot"
+        android:textColor="@color/colorIcons"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-        android:id="@+id/scrollView5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <Button
+        android:id="@+id/dodajtemat"
+        android:layout_width="223dp"
+        android:layout_height="66dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:background="@drawable/but"
+        android:text="Dodaj temat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView5" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="368dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="66dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
         <LinearLayout
@@ -36,9 +55,10 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/zmiennatemat"
+                android:id="@+id/zmiennatemat2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="66dp"
+                android:background="@drawable/but"
                 android:text="@string/zmiennatemat"
                 tools:layout_editor_absoluteX="35dp"
                 tools:layout_editor_absoluteY="4dp" />

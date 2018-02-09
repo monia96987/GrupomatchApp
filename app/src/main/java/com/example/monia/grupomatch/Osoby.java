@@ -1,5 +1,6 @@
 package com.example.monia.grupomatch;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -30,8 +31,17 @@ public class Osoby extends AppCompatActivity {
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(Osoby.this, "" + item.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent intent;
+                        switch (item.getItemId())
+                        {
+                            case R.id.dodajs:
+                                Toast.makeText(Osoby.this, "Osoba dodana do Twojej grupy" , Toast.LENGTH_LONG).show();
+                                break;
+                            case R.id.wrocw:
+                                break;
+                        }
                         return true;
+
                     }
                 });
                 popupMenu.show();

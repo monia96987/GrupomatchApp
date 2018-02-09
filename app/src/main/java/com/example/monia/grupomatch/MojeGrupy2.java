@@ -19,7 +19,7 @@ public class MojeGrupy2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_moje_grupy2);
 
-       button = (Button) findViewById(R.id.zmiennaczlonek);
+        button = (Button) findViewById(R.id.zmiennaczlonek);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,28 +32,45 @@ public class MojeGrupy2 extends AppCompatActivity {
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(MojeGrupy2.this, "" + item.getTitle(), Toast.LENGTH_SHORT).show();
+                        Intent intent;
+                        switch (item.getItemId()) {
+                            case R.id.wyswietlc:
+                                intent = new Intent(MojeGrupy2.this, DaneStudenta.class);
+                                startActivity(intent);
+                                break;
+                            case R.id.wyslijc:
+                                intent = new Intent(MojeGrupy2.this, Wiadomosc.class);
+                                startActivity(intent);
+                                break;
+                            case R.id.usunc:
+                                Toast.makeText(MojeGrupy2.this, "Student został usunięty z grupy", Toast.LENGTH_LONG).show();
+                                break;
+                        }
+
                         return true;
                     }
                 });
                 popupMenu.show();
-            }});
+            }
+        });
 
+    }
 
-        }
     public void klik(View view) {
         Intent intent;
-        switch (view.getId())
-        {
+        switch (view.getId()) {
             case R.id.zmiennanotatka:
                 intent = new Intent(MojeGrupy2.this, Notatka.class);
                 startActivity(intent);
                 break;
 
-            case R.id.one:
-                intent = new Intent(MojeGrupy2.this, Menu.class);
-                startActivity(intent);
-                break;
+
+        }
+    }
+
+
+
+
 
 
 
@@ -63,5 +80,3 @@ public class MojeGrupy2 extends AppCompatActivity {
 
 
         }
-
-}}

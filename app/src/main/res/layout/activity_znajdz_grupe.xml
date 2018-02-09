@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/rozmazane"
     tools:context="com.example.monia.grupomatch.ZnajdzGrupe">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="389dp"
         android:layout_height="505dp"
         android:orientation="vertical"
@@ -20,7 +22,8 @@
         <Button
             android:id="@+id/zmiennaprzedmiot2"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="66dp"
+            android:background="@drawable/but"
             android:onClick="klik"
             android:text="@string/zmiennaprzedmiot2"
             app:layout_constraintLeft_toLeftOf="parent"

@@ -16,7 +16,7 @@ public class MojeGrupy1 extends AppCompatActivity {
         Intent intent;
         switch (view.getId())
         {
-            case R.id.zmiennaprzedmiot:
+            case R.id.dalej:
                 intent = new Intent(MojeGrupy1.this, MojeGrupy2.class);
                 startActivity(intent);
                 break;

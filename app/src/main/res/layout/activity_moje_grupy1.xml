@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/rozmazane"
     tools:context="com.example.monia.grupomatch.MojeGrupy1">
 
 
@@ -20,11 +21,13 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/zmiennaprzedmiot"
+
+                android:id="@+id/dalej"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="66dp"
+                android:background="@drawable/but"
                 android:onClick="klik4"
-                android:text="@string/zmiennaprzedmiot"
+                android:text="zmiennaprzedmiot"
                 tools:layout_editor_absoluteX="23dp"
                 tools:layout_editor_absoluteY="39dp" />
         </LinearLayout>

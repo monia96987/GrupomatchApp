@@ -3,13 +3,13 @@
 
 
     <item
-        android:id="@+id/one"
+        android:id="@+id/wyswietlc"
         android:title="Wyświetl dane użytkownika"/>
     <item
-        android:id="@+id/two"
+        android:id="@+id/wyslijc"
         android:title="Wyślij wiadomość"/>
     <item
-        android:id="@+id/three"
+        android:id="@+id/usunc"
         android:title="Usuń z grupy"/>
 
 
